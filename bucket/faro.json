@@ -1,12 +1,12 @@
 {
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Faro Desktop collaboration platform",
   "homepage": "https://faro.ir",
   "license": "Proprietary",
   "architecture": {
     "64bit": {
-      "url": "https://s3.ir-tbz-sh1.arvanstorage.ir/hamafzar/releases/avapardaz/faro-flutter/windows/0.0.3/x64/Faro-v0.0.3-x64-Setup.exe",
-      "hash": "d1920c2563aca52b1a09201748f7db6a561c62b6e9e0a996b1f8c86a241f5c46"
+      "url": "https://s3.ir-tbz-sh1.arvanstorage.ir/hamafzar/releases/avapardaz/faro-flutter/windows/0.0.4/x64/Faro-v0.0.4-x64-Setup.exe",
+      "hash": "8682f25971140f969f7b8931f1ea11fd06044946894d709cc2f9e3295d14031d"
     }
   },
   "installer": {
