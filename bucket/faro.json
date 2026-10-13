@@ -1,30 +1,40 @@
-{
-  "version": "0.0.5",
-  "description": "Faro Desktop collaboration platform",
-  "homepage": "https://faro.ir",
-  "license": "Proprietary",
-  "architecture": {
-    "64bit": {
-      "url": "https://s3.ir-tbz-sh1.arvanstorage.ir/hamafzar/releases/avapardaz/faro-flutter/windows/0.0.5/x64/Faro-v0.0.5-x64-Setup.exe",
-      "hash": "647f46b4d35c583e9637e95ef3e47d09f1cc3b690030e385b60adce347d3e08b"
-    }
-  },
-  "installer": {
-    "args": ["/VERYSILENT", "/SUPPRESSMSGBOXES", "/NORESTART", "/SP-"]
-  },
-  "uninstaller": {
-    "script": "if (Test-Path \"$env:ProgramFiles\\Faro\\unins000.exe\") { Start-Process \"$env:ProgramFiles\\Faro\\unins000.exe\" -ArgumentList '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART' -Wait }"
-  },
-  "bin": [["C:\\Program Files\\Faro\\faro.exe", "faro"]],
-  "checkver": {
-    "url": "https://backend-hamafzar.avapardaz.ir/api/v1/avapardaz/faro-flutter/releases/check/?platform=windows&version=0.0.1&architecture=x64&build_number=1",
-    "jsonpath": "$.latest_release.version"
-  },
-  "autoupdate": {
-    "architecture": {
-      "64bit": {
-        "url": "https://s3.ir-tbz-sh1.arvanstorage.ir/hamafzar/releases/avapardaz/faro-flutter/windows/$version/x64/Faro-v$version-x64-Setup.exe"
-      }
-    }
-  }
+﻿{
+    "version":  "0.0.7",
+    "description":  "Faro Desktop collaboration platform",
+    "homepage":  "https://faro.ir",
+    "license":  "Proprietary",
+    "architecture":  {
+                         "64bit":  {
+                                       "url":  "https://s3.ir-tbz-sh1.arvanstorage.ir/hamafzar/releases/avapardaz/faro-flutter/windows/0.0.7/x64/Faro-v0.0.7-x64-Setup.exe",
+                                       "hash":  "7f6a453d2f86d88be7e9f6418cc2430ebb3cb17e420b5560409bc45e4b3ef98a"
+                                   }
+                     },
+    "installer":  {
+                      "args":  [
+                                   "/VERYSILENT",
+                                   "/SUPPRESSMSGBOXES",
+                                   "/NORESTART",
+                                   "/SP-"
+                               ]
+                  },
+    "uninstaller":  {
+                        "script":  "if (Test-Path \"$env:ProgramFiles\\Faro\\unins000.exe\") { Start-Process \"$env:ProgramFiles\\Faro\\unins000.exe\" -ArgumentList \u0027/VERYSILENT\u0027, \u0027/SUPPRESSMSGBOXES\u0027, \u0027/NORESTART\u0027 -Wait }"
+                    },
+    "bin":  [
+                [
+                    "C:\\Program Files\\Faro\\faro.exe",
+                    "faro"
+                ]
+            ],
+    "checkver":  {
+                     "url":  "https://backend-hamafzar.avapardaz.ir/api/v1/avapardaz/faro-flutter/releases/check/?platform=windows\u0026version=0.0.1\u0026architecture=x64\u0026build_number=1",
+                     "jsonpath":  "$.latest_release.version"
+                 },
+    "autoupdate":  {
+                       "architecture":  {
+                                            "64bit":  {
+                                                          "url":  "https://s3.ir-tbz-sh1.arvanstorage.ir/hamafzar/releases/avapardaz/faro-flutter/windows/$version/x64/Faro-v$version-x64-Setup.exe"
+                                                      }
+                                        }
+                   }
 }
