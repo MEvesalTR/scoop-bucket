@@ -1,12 +1,12 @@
 ﻿{
-    "version":  "0.0.7",
+    "version":  "0.0.8",
     "description":  "Faro Desktop collaboration platform",
     "homepage":  "https://faro.ir",
     "license":  "Proprietary",
     "architecture":  {
                          "64bit":  {
-                                       "url":  "https://s3.ir-tbz-sh1.arvanstorage.ir/hamafzar/releases/avapardaz/faro/windows/0.0.7/x64/Faro-v0.0.7-x64-Setup.exe",
-                                       "hash":  "f82baddd35c71898a76cc4e07c66bcd8c6843ed9f9f378723fc1d5c63bd16d06"
+                                       "url":  "https://s3.ir-tbz-sh1.arvanstorage.ir/hamafzar/releases/avapardaz/faro/windows/0.0.8/x64/Faro-v0.0.8-x64-Setup.exe",
+                                       "hash":  "a719d0bb1e9a3767de23ca9e9cba255a4389a6be94870d2bf333d090a7095204"
                                    }
                      },
     "installer":  {
