@@ -1,40 +1,40 @@
-﻿{
-    "version":  "0.0.8",
-    "description":  "Faro Desktop collaboration platform",
-    "homepage":  "https://faro.ir",
-    "license":  "Proprietary",
-    "architecture":  {
-                         "64bit":  {
-                                       "url":  "https://s3.ir-tbz-sh1.arvanstorage.ir/hamafzar/releases/avapardaz/faro/windows/0.0.8/x64/Faro-v0.0.8-x64-Setup.exe",
-                                       "hash":  "67f6b4dc0c81ba4ae7a6ef2c8b2526bd019cd060cd028b894f9b0ac0a8a65f3a"
-                                   }
-                     },
-    "installer":  {
-                      "args":  [
-                                   "/VERYSILENT",
-                                   "/SUPPRESSMSGBOXES",
-                                   "/NORESTART",
-                                   "/SP-"
-                               ]
-                  },
-    "uninstaller":  {
-                        "script":  "if (Test-Path \"$env:ProgramFiles\\Faro\\unins000.exe\") { Start-Process \"$env:ProgramFiles\\Faro\\unins000.exe\" -ArgumentList \u0027/VERYSILENT\u0027, \u0027/SUPPRESSMSGBOXES\u0027, \u0027/NORESTART\u0027 -Wait }"
-                    },
-    "bin":  [
-                [
-                    "C:\\Program Files\\Faro\\faro.exe",
-                    "faro"
-                ]
-            ],
-    "checkver":  {
-                     "url":  "https://backend-hamafzar.avapardaz.ir/api/v1/avapardaz/faro/releases/check/?platform=windows\u0026version=0.0.1\u0026architecture=x64\u0026build_number=1",
-                     "jsonpath":  "$.latest_release.version"
-                 },
-    "autoupdate":  {
-                       "architecture":  {
-                                            "64bit":  {
-                                                          "url":  "https://s3.ir-tbz-sh1.arvanstorage.ir/hamafzar/releases/avapardaz/faro/windows/$version/x64/Faro-v$version-x64-Setup.exe"
-                                                      }
-                                        }
-                   }
+{
+  "version": "0.1.1",
+  "description": "Faro Desktop collaboration platform",
+  "homepage": "https://faro.ir",
+  "license": "Proprietary",
+  "architecture": {
+    "64bit": {
+      "url": "https://s3.ir-tbz-sh1.arvanstorage.ir/hamafzar/s3_storage/public/f0c91dc2a7a44983b3b54923fd0bb30c_Faro-v0.1.1-x64-Setup.exe",
+      "hash": "bf08f548d6528e0582eac4113d129a361e9120bebdb260717ce93fd57e161a86"
+    }
+  },
+  "installer": {
+    "args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ]
+  },
+  "uninstaller": {
+    "script": "if (Test-Path \"$env:ProgramFiles\\Faro\\unins000.exe\") { Start-Process \"$env:ProgramFiles\\Faro\\unins000.exe\" -ArgumentList '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART' -Wait }"
+  },
+  "bin": [
+    [
+      "C:\\Program Files\\Faro\\faro.exe",
+      "faro"
+    ]
+  ],
+  "checkver": {
+    "url": "https://backend-hamafzar.avapardaz.ir/api/v1/avapardaz/faro/releases/check/?platform=windows&version=0.0.1&architecture=x64&build_number=1",
+    "jsonpath": "$.latest_release.version"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://s3.ir-tbz-sh1.arvanstorage.ir/hamafzar/releases/avapardaz/faro/windows/$version/x64/Faro-v$version-x64-Setup.exe"
+      }
+    }
+  }
 }
